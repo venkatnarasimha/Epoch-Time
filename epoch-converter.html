@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="./tohuman.js" defer></script>
+</head> 
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+    </div>
+    <div class="main" >
+        Epoch Converter
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="label">Today Date :</div>
+            <hr>
+            <div class="date">Time: </div>
+            <div class="label">The Current Time:</div>
+            <hr>
+            <div class="time">Time: </div>
+            <div class="label">The Current Epoch Time:</div>
+            <hr>
+            <div class="epoch">Time: </div>
+        </div>
+
+        <div class="main-converstion">
+            <label class='label'>Enter Human Date : </label><br>
+            <input type="text" class="text-box year" maxlength="4" size="6" placeholder="YYYY">
+            <span>-</span>
+            <input type="text" class="text-box month" maxlength="2" size="4" placeholder="MM">
+            <span>-</span>
+            <input type="text" class="text-box dates" maxlength="2" size="4" placeholder="DD">
+            <br><br><label class='label'>Enter  Time : </label><br>
+            <input type="text" class="text-box hour" maxlength="2" size="4" placeholder="hh">
+            <span>:</span>
+            <input type="text" class="text-box minute" maxlength="2" size="6" placeholder="mm">
+            <span>:</span>
+            <input type="text" class="text-box second" maxlength="4" size="6" placeholder="ss">
+            <br>
+            <!-- <div class="promptmsg">Error</div> -->
+            <button type="button" class="button butepoch">Convert</button><br>
+            <label class="label">Epoch Date : </label><br>
+            <input type="text" class="text-box outputEpoch" readonly placeholder="Result">
+            
+            <br><br>
+            <hr style="height: 5px; border-width: 5px; color: black; background-color: black;">
+            
+            <br>
+            <label class="label">Enter UNIX Epoch Date : </label><br>
+            <input type="text" class="text-box epoch epochs" maxlength="15" size="20" placeholder="0123456789">
+            <small>(milli sec)</small>
+            <br>
+            <button type="button" class="button buthuman">Convert</button><br>
+            <label class="label">HumanDate : </label><br>
+            <input type="text" class="text-box outputHuman" readonly placeholder="Result">
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+    <div class="grid-box">
+        
+        <div class="main-converstion">
+            <h2>What is the unix time stamp?</h2><br>
+            <hr style=" color: black; background-color: black;">
+            <p>The unix time stamp is a way to track time as a running total of seconds. This count starts at the Unix Epoch on January 1st, 1970 at UTC. Therefore, the unix time stamp is merely the number of seconds between a particular date and the Unix Epoch. It should also be pointed out (thanks to the comments from visitors to this site) that this point in time technically does not change no matter where you are located on the globe. This is very useful to computer systems for tracking and sorting dated information in dynamic and distributed applications both online and client side.</p>
+            </div><br><br>
+        
+        <div class="main-converstion">
+            <h2>What happens on January 19, 2038?</h2><br>
+            <hr style=" color: black; background-color: black;">
+            <p>On this date the Unix Time Stamp will cease to work due to a 32-bit overflow. Before this moment millions of applications will need to either adopt a new convention for time stamps or be migrated to 64-bit systems which will buy the time stamp a "bit" more time.</p>
+        </div><br><br>
+    </div>
+   
+    <div class=above-footer>
+
+    </div>
+    <footer class="footer">
+        <small class="footer-copyright-wat">© UTILITY APPLICATIONS</small>
+        <small class="footer-copyright-divider">|</small>
+        <small class="footer-copyright-wat">© EPOCH CONVERTERS</small>
+        <small class="footer-copyright-divider">|</small>
+        <small class="footer-copyright-arr"> NO COPYRIGHTS</small>
+    </footer>
+</body>
+</html>
