@@ -24,7 +24,7 @@ function toHumanDate(epoch) {
 
 function toEpochDate() {
     const humanDate = new Date(`${mm.value} ${dd.value}, ${yr.value} ${hh.value}:${min.value}:${sec.value}`);
-
+    console.log(`${mm.value} ${dd.value}, ${yr.value} ${hh.value}:${min.value}:${sec.value}`);
     const toEpoch = humanDate.getTime();
     return toEpoch;
 }
